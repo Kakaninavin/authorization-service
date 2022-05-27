@@ -127,4 +127,10 @@ public class AuthorizationController {
 		log.info("OK");
 		return "OK";
 	}
+	
+	@GetMapping(value = "/hello")
+	public String helloworld() {
+		//log.info("OK");
+		return "<h1>Hello World To AWS</h1>";
+	}
 }
